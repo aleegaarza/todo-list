@@ -15,13 +15,10 @@ export const UpdateForm = ({ updateData, updateTask, changeTask, cancelUpdate })
                 <div className='task' >
                     <button
                         onClick={updateTask}
-                        className=''
-
                     >update</button>
                     <button
                         onClick={cancelUpdate}
 
-                        className=''
                     >cancel</button>
                 </div>
 
