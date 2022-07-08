@@ -12,7 +12,7 @@ export const UpdateForm = ({ updateData, updateTask, changeTask, cancelUpdate })
                         className=''
                     />
                 </div>
-                <div className='' >
+                <div className='task' >
                     <button
                         onClick={updateTask}
                         className=''

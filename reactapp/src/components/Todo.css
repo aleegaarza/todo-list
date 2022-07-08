@@ -3,6 +3,7 @@ span {
   list-style: none;
   margin-top: 2.6rem;
   list-style: none;
+  font-size: 30px;
 }
 .toDo {
   margin: 4rem auto;
@@ -14,4 +15,23 @@ span {
 }
 .img {
   width: 20px;
+}
+span .iconDone {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: white;
+}
+
+span .iconEdit {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: white;
+}
+span .iconDelete {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: white;
 }

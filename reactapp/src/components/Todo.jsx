@@ -1,6 +1,5 @@
 import React from 'react'
 import './ToDo.css'
-import './delete.png'
 
 export const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
     return (
@@ -19,7 +18,7 @@ export const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
                                     <span title='Completed/ Not completed'
                                         onClick={(e) => markDone(task.id)}
 
-                                    ><div><img src="./work-done.png" alt="done" /></div></span>
+                                    ><div className='iconDone'><img className='img' src="https://cdn-icons-png.flaticon.com/512/70/70199.png" alt="done" /></div></span>
 
                                     {task.status ? null : (
                                         <span title='Edit'
@@ -29,15 +28,15 @@ export const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
                                                 title: task.title,
                                                 status: task.status ? true : false
                                             })}>
-                                            <div><img src="./pencil.png" alt="edit" /></div>
-
+                                            <div className='iconEdit' ><img className='img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/480px-Edit_icon_%28the_Noun_Project_30184%29.svg.png" alt="edit" />
+                                            </div>
                                         </span>
                                     )}
                                     <span
 
                                         title='Delete'
                                         onClick={() => deleteTask(task.id)}>
-                                        <div><img className='img' src="./delete.png" alt="trash" /></div>
+                                        <div className='iconDelete'><img className='img' src="https://www.iconpacks.net/icons/1/free-trash-icon-347-thumb.png" alt="trash" /></div>
                                     </span>
                                 </div>
 
